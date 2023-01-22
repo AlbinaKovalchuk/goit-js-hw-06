@@ -23,8 +23,8 @@ function onFormSubmit(event) {
   if (email.value === '' || password.value === '') {
     return alert('All forms must be fill in!');
   }
-  console.log(`Email: ${email.value}
-   Password: ${password.value}`);
+  // console.log(`Email: ${email.value} Password: ${password.value}`);
+  console.log({ email: email.value, password: password.value });
   event.currentTarget.reset();
 
   // 2 cпособ собрать данные через formData.forEach где forEach встроеный медод для formDatа

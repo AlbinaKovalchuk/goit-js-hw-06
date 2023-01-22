@@ -3,19 +3,19 @@
 
 // Для генерування випадкового кольору використовуй функцію getRandomHexColor.
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
 const btnChangeColor = document.querySelector('.change-color');
 const spanText = document.querySelector('.color');
-const bodyElem =document.body
-
-// console.log(btnChangeColor);
-// console.log(spanText.textContent);
+const bodyElem = document.body;
 
 btnChangeColor.addEventListener('click', onChangeColor);
 
 function onChangeColor(event) {
-  bodyElem.style.background = getRandomHexColor();
-  spanText.textContent = `${bodyElem.style.background}`;
-  console.log(bodyElem.style.background);
+  spanText.textContent = getRandomHexColor();
+  bodyElem.style.background = spanText.textContent;
+  // console.log(bodyElem.style.background);
+  // console.log(spanText.textContent);
 }

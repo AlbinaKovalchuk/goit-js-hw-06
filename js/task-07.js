@@ -8,9 +8,11 @@
 const input = document.querySelector('#font-size-control');
 const spanText = document.querySelector('#text');
 
+
+spanText.style.fontSize = `${input.value}px`;
+
 input.addEventListener('input', onInputFont);
 // 2 вариант(работает при потере фокуса) подходит для чек-боксов и радио-баттон 
-
 //  input.addEventListener('change', onInputFont);
 
 function onInputFont(event) {

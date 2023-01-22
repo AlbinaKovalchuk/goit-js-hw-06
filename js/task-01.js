@@ -12,9 +12,9 @@
 // Elements: 5
 // ================================== кол-во категорий = кол-ву li с класом item =====================================
 
-// 1 вариант (за ID до батька  та його дітей)
-const elemLiItemsById = document.getElementById('categories');
-console.log('Number of categories:', elemLiItemsById.childElementCount);
+// // 1 вариант (за ID до батька  та його дітей)
+// const elemLiItemsById = document.getElementById('categories');
+// console.log('Number of categories:', elemLiItemsById.childElementCount);
 
 // ===============================================================
 // 2 вариант как масив елементов

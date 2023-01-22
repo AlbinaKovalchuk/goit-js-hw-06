@@ -12,9 +12,9 @@ const inputAttributeLength = input.dataset.length;
 
 function onInputBlur(event) {
   if (String(event.target.value.length) === inputAttributeLength) {
-    // input.classList.remove('invalid');
-    // input.classList.add('valid');
-    input.classList.replace('invalid','valid');
+    console.log(input.classList);
+    input.classList.add('valid');
+    input.classList.remove('invalid');
     return;
   }
   input.classList.remove('valid');
